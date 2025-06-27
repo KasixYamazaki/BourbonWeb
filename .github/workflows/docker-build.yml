@@ -28,4 +28,4 @@ jobs:
         context: ./BourbonWeb
         file: ./BourbonWeb/Dockerfile
         push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/mvc-docker-app:latest
+        tags: ${{ secrets.DOCKER_USERNAME }}/bourbon-web:latest
