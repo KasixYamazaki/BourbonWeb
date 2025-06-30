@@ -244,6 +244,9 @@ dotnet_naming_style.begins_with_i.required_prefix = I
 dotnet_naming_style.begins_with_i.required_suffix = 
 dotnet_naming_style.begins_with_i.word_separator = 
 dotnet_naming_style.begins_with_i.capitalization = pascal_case
+dotnet_diagnostic.SA0001.severity = none
+dotnet_diagnostic.SA1133.severity = none
+dotnet_diagnostic.SA1309.severity = none
 
 [*.{cs,vb}]
 tab_width = 4
