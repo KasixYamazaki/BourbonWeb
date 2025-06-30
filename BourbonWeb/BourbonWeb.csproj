@@ -30,4 +30,12 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Data\GitHub\BourbonWeb\BourbonWeb\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Data\GitHub\BourbonWeb\BourbonWeb\.editorconfig" />
+  </ItemGroup>
+
 </Project>

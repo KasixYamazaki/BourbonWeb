@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿// <copyright file="ProductsController.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
+
+using BourbonWeb.Data;
+using BourbonWeb.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using BourbonWeb.Data;
-using BourbonWeb.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace BourbonWeb.Controllers
 {
@@ -16,13 +20,13 @@ namespace BourbonWeb.Controllers
 
         public ProductsController(AppDbContext context)
         {
-            _context = context;
+            this._context = context;
         }
 
         // GET: Products
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Product.ToListAsync());
+            return this.View(await this._context.Product.ToListAsync());
         }
 
         // GET: Products/Details/5
@@ -30,23 +34,23 @@ namespace BourbonWeb.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                return this.NotFound();
             }
 
-            var product = await _context.Product
+            var product = await this._context.Product
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (product == null)
             {
-                return NotFound();
+                return this.NotFound();
             }
 
-            return View(product);
+            return this.View(product);
         }
 
         // GET: Products/Create
         public IActionResult Create()
         {
-            return View();
+            return this.View();
         }
 
         // POST: Products/Create
@@ -56,13 +60,14 @@ namespace BourbonWeb.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Name,Price,Description")] Product product)
         {
-            if (ModelState.IsValid)
+            if (this.ModelState.IsValid)
             {
-                _context.Add(product);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                this._context.Add(product);
+                await this._context.SaveChangesAsync();
+                return this.RedirectToAction(nameof(this.Index));
             }
-            return View(product);
+
+            return this.View(product);
         }
 
         // GET: Products/Edit/5
@@ -70,15 +75,16 @@ namespace BourbonWeb.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                return this.NotFound();
             }
 
-            var product = await _context.Product.FindAsync(id);
+            var product = await this._context.Product.FindAsync(id);
             if (product == null)
             {
-                return NotFound();
+                return this.NotFound();
             }
-            return View(product);
+
+            return this.View(product);
         }
 
         // POST: Products/Edit/5
@@ -90,30 +96,32 @@ namespace BourbonWeb.Controllers
         {
             if (id != product.Id)
             {
-                return NotFound();
+                return this.NotFound();
             }
 
-            if (ModelState.IsValid)
+            if (this.ModelState.IsValid)
             {
                 try
                 {
-                    _context.Update(product);
-                    await _context.SaveChangesAsync();
+                    this._context.Update(product);
+                    await this._context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ProductExists(product.Id))
+                    if (!this.ProductExists(product.Id))
                     {
-                        return NotFound();
+                        return this.NotFound();
                     }
                     else
                     {
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+
+                return this.RedirectToAction(nameof(this.Index));
             }
-            return View(product);
+
+            return this.View(product);
         }
 
         // GET: Products/Delete/5
@@ -121,17 +129,17 @@ namespace BourbonWeb.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                return this.NotFound();
             }
 
-            var product = await _context.Product
+            var product = await this._context.Product
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (product == null)
             {
-                return NotFound();
+                return this.NotFound();
             }
 
-            return View(product);
+            return this.View(product);
         }
 
         // POST: Products/Delete/5
@@ -139,19 +147,19 @@ namespace BourbonWeb.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var product = await _context.Product.FindAsync(id);
+            var product = await this._context.Product.FindAsync(id);
             if (product != null)
             {
-                _context.Product.Remove(product);
+                this._context.Product.Remove(product);
             }
 
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            await this._context.SaveChangesAsync();
+            return this.RedirectToAction(nameof(this.Index));
         }
 
         private bool ProductExists(int id)
         {
-            return _context.Product.Any(e => e.Id == id);
+            return this._context.Product.Any(e => e.Id == id);
         }
     }
 }
