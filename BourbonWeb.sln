@@ -5,6 +5,13 @@ VisualStudioVersion = 17.14.36212.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BourbonWeb", "BourbonWeb\BourbonWeb.csproj", "{F2BE81ED-CB00-475D-B4F8-A6F03863E022}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{DDB4EF12-CC4E-5E88-E6FC-71A802F4DE97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{70249E26-1006-42DA-97A4-831836437C96}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\docker-build.yml = .github\workflows\docker-build.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +25,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{70249E26-1006-42DA-97A4-831836437C96} = {DDB4EF12-CC4E-5E88-E6FC-71A802F4DE97}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F4103D29-FC5C-4EDF-8D2E-11BDC4DF26F2}
