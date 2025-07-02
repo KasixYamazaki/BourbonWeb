@@ -11,7 +11,11 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        lfs: false
+        submodules: false
 
     - name: Format check
       run: dotnet format --verify-no-changes
