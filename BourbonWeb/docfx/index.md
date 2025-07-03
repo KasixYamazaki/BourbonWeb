@@ -17,3 +17,6 @@ Refer to [Markdown](http://daringfireball.net/projects/markdown/) for how to wri
 ## 📘 APIリファレンス
 
 [こちらからAPIドキュメントを参照できます](api/index.html)
+
+## ProductsController ドキュメント
+[ProductsController の API](api/BourbonWeb.Controllers.ProductsController.html)
