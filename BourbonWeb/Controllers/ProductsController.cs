@@ -14,22 +14,36 @@ using System.Threading.Tasks;
 
 namespace BourbonWeb.Controllers
 {
+    /// <summary>
+    /// Controller for managing products.
+    /// </summary>
     public class ProductsController : Controller
     {
         private readonly AppDbContext _context;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ProductsController"/> class.
+        /// </summary>
+        /// <param name="context">The database context.</param>
         public ProductsController(AppDbContext context)
         {
             this._context = context;
         }
 
-        // GET: Products
+        /// <summary>
+        /// Displays a list of all products.
+        /// </summary>
+        /// <returns>A view containing the list of products.</returns>
         public async Task<IActionResult> Index()
         {
             return this.View(await this._context.Product.ToListAsync());
         }
 
-        // GET: Products/Details/5
+        /// <summary>
+        /// Displays details of a specific product.
+        /// </summary>
+        /// <param name="id">The ID of the product.</param>
+        /// <returns>A view containing the product details.</returns>
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -47,15 +61,20 @@ namespace BourbonWeb.Controllers
             return this.View(product);
         }
 
-        // GET: Products/Create
+        /// <summary>
+        /// Displays the product creation form.
+        /// </summary>
+        /// <returns>A view for creating a new product.</returns>
         public IActionResult Create()
         {
             return this.View();
         }
 
-        // POST: Products/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        /// <summary>
+        /// Handles the submission of the product creation form.
+        /// </summary>
+        /// <param name="product">The product to create.</param>
+        /// <returns>A redirect to the product list view if successful; otherwise, the creation view.</returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Name,Price,Description")] Product product)
@@ -70,7 +89,11 @@ namespace BourbonWeb.Controllers
             return this.View(product);
         }
 
-        // GET: Products/Edit/5
+        /// <summary>
+        /// Displays the product editing form.
+        /// </summary>
+        /// <param name="id">The ID of the product to edit.</param>
+        /// <returns>A view for editing the product.</returns>
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -87,9 +110,12 @@ namespace BourbonWeb.Controllers
             return this.View(product);
         }
 
-        // POST: Products/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        /// <summary>
+        /// Handles the submission of the product editing form.
+        /// </summary>
+        /// <param name="id">The ID of the product to edit.</param>
+        /// <param name="product">The updated product details.</param>
+        /// <returns>A redirect to the product list view if successful; otherwise, the editing view.</returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Price,Description")] Product product)
@@ -124,7 +150,11 @@ namespace BourbonWeb.Controllers
             return this.View(product);
         }
 
-        // GET: Products/Delete/5
+        /// <summary>
+        /// Displays the product deletion confirmation view.
+        /// </summary>
+        /// <param name="id">The ID of the product to delete.</param>
+        /// <returns>A view for confirming the deletion of the product.</returns>
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -142,7 +172,11 @@ namespace BourbonWeb.Controllers
             return this.View(product);
         }
 
-        // POST: Products/Delete/5
+        /// <summary>
+        /// Handles the confirmation of product deletion.
+        /// </summary>
+        /// <param name="id">The ID of the product to delete.</param>
+        /// <returns>A redirect to the product list view.</returns>
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -157,6 +191,11 @@ namespace BourbonWeb.Controllers
             return this.RedirectToAction(nameof(this.Index));
         }
 
+        /// <summary>
+        /// Checks if a product exists in the database.
+        /// </summary>
+        /// <param name="id">The ID of the product.</param>
+        /// <returns>True if the product exists; otherwise, false.</returns>
         private bool ProductExists(int id)
         {
             return this._context.Product.Any(e => e.Id == id);
