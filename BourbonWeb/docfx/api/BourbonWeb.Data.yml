@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: BourbonWeb.Data
+  commentId: N:BourbonWeb.Data
+  id: BourbonWeb.Data
+  children:
+  - BourbonWeb.Data.AppDbContext
+  langs:
+  - csharp
+  - vb
+  name: BourbonWeb.Data
+  nameWithType: BourbonWeb.Data
+  fullName: BourbonWeb.Data
+  type: Namespace
+  assemblies:
+  - BourbonWeb
+references:
+- uid: BourbonWeb.Data.AppDbContext
+  commentId: T:BourbonWeb.Data.AppDbContext
+  parent: BourbonWeb.Data
+  href: BourbonWeb.Data.AppDbContext.html
+  name: AppDbContext
+  nameWithType: AppDbContext
+  fullName: BourbonWeb.Data.AppDbContext
+- uid: BourbonWeb.Data
+  commentId: N:BourbonWeb.Data
+  href: BourbonWeb.html
+  name: BourbonWeb.Data
+  nameWithType: BourbonWeb.Data
+  fullName: BourbonWeb.Data
+  spec.csharp:
+  - uid: BourbonWeb
+    name: BourbonWeb
+    href: BourbonWeb.html
+  - name: .
+  - uid: BourbonWeb.Data
+    name: Data
+    href: BourbonWeb.Data.html
+  spec.vb:
+  - uid: BourbonWeb
+    name: BourbonWeb
+    href: BourbonWeb.html
+  - name: .
+  - uid: BourbonWeb.Data
+    name: Data
+    href: BourbonWeb.Data.html

@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: BourbonWeb.Controllers
+  commentId: N:BourbonWeb.Controllers
+  id: BourbonWeb.Controllers
+  children:
+  - BourbonWeb.Controllers.HomeController
+  - BourbonWeb.Controllers.ProductsController
+  langs:
+  - csharp
+  - vb
+  name: BourbonWeb.Controllers
+  nameWithType: BourbonWeb.Controllers
+  fullName: BourbonWeb.Controllers
+  type: Namespace
+  assemblies:
+  - BourbonWeb
+references:
+- uid: BourbonWeb.Controllers.HomeController
+  commentId: T:BourbonWeb.Controllers.HomeController
+  href: BourbonWeb.Controllers.HomeController.html
+  name: HomeController
+  nameWithType: HomeController
+  fullName: BourbonWeb.Controllers.HomeController
+- uid: BourbonWeb.Controllers.ProductsController
+  commentId: T:BourbonWeb.Controllers.ProductsController
+  href: BourbonWeb.Controllers.ProductsController.html
+  name: ProductsController
+  nameWithType: ProductsController
+  fullName: BourbonWeb.Controllers.ProductsController

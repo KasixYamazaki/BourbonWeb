@@ -1,0 +1,228 @@
+{
+  "source_base_path": "C:/Data/GitHub/BourbonWeb/BourbonWeb/docfx",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BourbonWeb.Controllers.HomeController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BourbonWeb.Controllers.HomeController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BourbonWeb.Controllers.HomeController",
+      "Summary": "<p sourcefile=\"api/BourbonWeb.Controllers.HomeController.yml\" sourcestartlinenumber=\"1\">Represents the controller for handling requests to the home page and related views.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BourbonWeb.Controllers.ProductsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BourbonWeb.Controllers.ProductsController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BourbonWeb.Controllers.ProductsController",
+      "Summary": "<p sourcefile=\"api/BourbonWeb.Controllers.ProductsController.yml\" sourcestartlinenumber=\"1\">Controller for managing products.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BourbonWeb.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BourbonWeb.Controllers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BourbonWeb.Controllers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BourbonWeb.Data.AppDbContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BourbonWeb.Data.AppDbContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BourbonWeb.Data.AppDbContext",
+      "Summary": "<p sourcefile=\"api/BourbonWeb.Data.AppDbContext.yml\" sourcestartlinenumber=\"1\">Represents the application's database context.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BourbonWeb.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BourbonWeb.Data.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BourbonWeb.Data",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BourbonWeb.Migrations.InitialCreate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BourbonWeb.Migrations.InitialCreate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BourbonWeb.Migrations.InitialCreate",
+      "Summary": "<p sourcefile=\"api/BourbonWeb.Migrations.InitialCreate.yml\" sourcestartlinenumber=\"1\">A base class inherited by each EF Core migration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BourbonWeb.Migrations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BourbonWeb.Migrations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BourbonWeb.Migrations",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BourbonWeb.Models.ErrorViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BourbonWeb.Models.ErrorViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BourbonWeb.Models.ErrorViewModel",
+      "Summary": "<p sourcefile=\"api/BourbonWeb.Models.ErrorViewModel.yml\" sourcestartlinenumber=\"1\">Represents the model for error information.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BourbonWeb.Models.Product.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BourbonWeb.Models.Product.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BourbonWeb.Models.Product",
+      "Summary": "<p sourcefile=\"api/BourbonWeb.Models.Product.yml\" sourcestartlinenumber=\"1\">Represents a product with an ID, name, price, and description.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BourbonWeb.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BourbonWeb.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BourbonWeb.Models",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

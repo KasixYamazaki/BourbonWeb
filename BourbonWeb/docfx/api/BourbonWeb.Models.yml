@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: BourbonWeb.Models
+  commentId: N:BourbonWeb.Models
+  id: BourbonWeb.Models
+  children:
+  - BourbonWeb.Models.ErrorViewModel
+  - BourbonWeb.Models.Product
+  langs:
+  - csharp
+  - vb
+  name: BourbonWeb.Models
+  nameWithType: BourbonWeb.Models
+  fullName: BourbonWeb.Models
+  type: Namespace
+  assemblies:
+  - BourbonWeb
+references:
+- uid: BourbonWeb.Models.ErrorViewModel
+  commentId: T:BourbonWeb.Models.ErrorViewModel
+  href: BourbonWeb.Models.ErrorViewModel.html
+  name: ErrorViewModel
+  nameWithType: ErrorViewModel
+  fullName: BourbonWeb.Models.ErrorViewModel
+- uid: BourbonWeb.Models.Product
+  commentId: T:BourbonWeb.Models.Product
+  parent: BourbonWeb.Models
+  href: BourbonWeb.Models.Product.html
+  name: Product
+  nameWithType: Product
+  fullName: BourbonWeb.Models.Product
+- uid: BourbonWeb.Models
+  commentId: N:BourbonWeb.Models
+  href: BourbonWeb.html
+  name: BourbonWeb.Models
+  nameWithType: BourbonWeb.Models
+  fullName: BourbonWeb.Models
+  spec.csharp:
+  - uid: BourbonWeb
+    name: BourbonWeb
+    href: BourbonWeb.html
+  - name: .
+  - uid: BourbonWeb.Models
+    name: Models
+    href: BourbonWeb.Models.html
+  spec.vb:
+  - uid: BourbonWeb
+    name: BourbonWeb
+    href: BourbonWeb.html
+  - name: .
+  - uid: BourbonWeb.Models
+    name: Models
+    href: BourbonWeb.Models.html

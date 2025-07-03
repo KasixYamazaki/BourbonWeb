@@ -1,0 +1,37 @@
+### YamlMime:TableOfContent
+items:
+- uid: BourbonWeb.Controllers
+  name: BourbonWeb.Controllers
+  type: Namespace
+  items:
+  - uid: BourbonWeb.Controllers.HomeController
+    name: HomeController
+    type: Class
+  - uid: BourbonWeb.Controllers.ProductsController
+    name: ProductsController
+    type: Class
+- uid: BourbonWeb.Data
+  name: BourbonWeb.Data
+  type: Namespace
+  items:
+  - uid: BourbonWeb.Data.AppDbContext
+    name: AppDbContext
+    type: Class
+- uid: BourbonWeb.Migrations
+  name: BourbonWeb.Migrations
+  type: Namespace
+  items:
+  - uid: BourbonWeb.Migrations.InitialCreate
+    name: InitialCreate
+    type: Class
+- uid: BourbonWeb.Models
+  name: BourbonWeb.Models
+  type: Namespace
+  items:
+  - uid: BourbonWeb.Models.ErrorViewModel
+    name: ErrorViewModel
+    type: Class
+  - uid: BourbonWeb.Models.Product
+    name: Product
+    type: Class
+memberLayout: SamePage

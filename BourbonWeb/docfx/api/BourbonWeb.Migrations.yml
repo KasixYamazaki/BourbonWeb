@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: BourbonWeb.Migrations
+  commentId: N:BourbonWeb.Migrations
+  id: BourbonWeb.Migrations
+  children:
+  - BourbonWeb.Migrations.InitialCreate
+  langs:
+  - csharp
+  - vb
+  name: BourbonWeb.Migrations
+  nameWithType: BourbonWeb.Migrations
+  fullName: BourbonWeb.Migrations
+  type: Namespace
+  assemblies:
+  - BourbonWeb
+references:
+- uid: BourbonWeb.Migrations.InitialCreate
+  commentId: T:BourbonWeb.Migrations.InitialCreate
+  href: BourbonWeb.Migrations.InitialCreate.html
+  name: InitialCreate
+  nameWithType: InitialCreate
+  fullName: BourbonWeb.Migrations.InitialCreate
