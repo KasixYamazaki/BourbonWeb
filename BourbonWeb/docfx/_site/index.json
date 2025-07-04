@@ -59,9 +59,14 @@
     "title": "Introduction | BourbonWeb",
     "summary": "Introduction"
   },
+  "docs/products-controller.html": {
+    "href": "docs/products-controller.html",
+    "title": "ProductsController | BourbonWeb",
+    "summary": "ProductsController ProductsController は商品の一覧、詳細、作成、編集、削除などを扱う MVC コントローラーです。各アクションの利用方法については生成された API ドキュメントをご参照ください。 API リファレンスはこちら"
+  },
   "index.html": {
     "href": "index.html",
     "title": "This is the HOMEPAGE. | BourbonWeb",
-    "summary": "This is the HOMEPAGE. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
+    "summary": "This is the HOMEPAGE. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image. BourbonWeb ドキュメントへようこそ このドキュメントでは、ASP.NET Core MVC アプリケーション「BourbonWeb」の構成とAPIを説明します。 \uD83D\uDCD8 APIリファレンス こちらからAPIドキュメントを参照できます ProductsController ドキュメント ProductsController の API"
   }
 }

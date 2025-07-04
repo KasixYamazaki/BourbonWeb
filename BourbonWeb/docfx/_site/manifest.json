@@ -184,6 +184,16 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "docs/products-controller.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/products-controller.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "docs/toc.yml",
       "output": {
