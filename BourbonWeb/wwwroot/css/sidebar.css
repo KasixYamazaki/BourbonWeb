@@ -1,0 +1,24 @@
+#page {
+    display: flex;
+    flex: 1 1 auto;
+    min-height: 0;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+}
+
+.sidebar.collapsed {
+    width: 60px;
+}
+
+.sidebar .nav-link {
+    white-space: nowrap;
+}
+
+body {
+    margin-bottom: 0;
+}
