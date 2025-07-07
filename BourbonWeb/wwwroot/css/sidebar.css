@@ -1,23 +1,13 @@
-body.with-sidebar {
-    margin-left: 250px;
-    transition: margin-left 0.3s ease;
-}
-
-body.with-sidebar.collapsed {
-    margin-left: 60px;
+#page {
+    display: flex;
+    flex: 1;
 }
 
 .sidebar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
     width: 250px;
-    padding-top: 60px;
     background-color: #f8f9fa;
     overflow-x: hidden;
     transition: width 0.3s ease;
-    z-index: 1030;
 }
 
 .sidebar.collapsed {
@@ -27,4 +17,3 @@ body.with-sidebar.collapsed {
 .sidebar .nav-link {
     white-space: nowrap;
 }
-
