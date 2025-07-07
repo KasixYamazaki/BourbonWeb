@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  margin-bottom: 30px; /* Reduce height to avoid vertical scroll */
+  margin-bottom: 0; /* Remove extra space to fit within 1080p height */
   overflow-x: hidden; /* Prevent horizontal scroll on Full HD resolution */
 }
 
