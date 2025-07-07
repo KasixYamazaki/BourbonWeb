@@ -4,11 +4,15 @@
 // Write your JavaScript code.
 
 document.addEventListener('DOMContentLoaded', function () {
-    const toggleBtn = document.getElementById('sidebarToggle');
     const sidebar = document.getElementById('sidebar');
-    if (toggleBtn && sidebar) {
-        toggleBtn.addEventListener('click', function () {
-            sidebar.classList.toggle('collapsed');
+    if (sidebar) {
+        sidebar.addEventListener('click', function (e) {
+            if (e.target.tagName === 'A') {
+                const offcanvas = bootstrap.Offcanvas.getInstance(sidebar);
+                if (offcanvas) {
+                    offcanvas.hide();
+                }
+            }
         });
     }
 });

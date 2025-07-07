@@ -4,15 +4,8 @@
 }
 
 .sidebar {
-    width: 250px;
     background-color: #f8f9fa;
-    overflow-x: hidden;
-    transition: width 0.3s ease;
-    padding-bottom: 60px; /* prevent overlap with fixed footer */
-}
-
-.sidebar.collapsed {
-    width: 60px;
+    padding-bottom: 60px;
 }
 
 .sidebar .nav-link {

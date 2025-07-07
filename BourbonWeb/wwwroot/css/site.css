@@ -1,5 +1,8 @@
 html {
   font-size: 14px;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  background-color: #F9FAFB;
+  color: #333333;
 }
 
 @media (min-width: 768px) {
@@ -22,9 +25,26 @@ body {
   overflow-x: hidden; /* Prevent horizontal scroll on Full HD resolution */
 }
 
-/* Ensure content scales within 1920x1080 screens */
-#page {
-  max-width: 100vw;
-  height: calc(100vh - 112px); /* Fit content within 1080p screens */
+header nav {
+  background-color: #004098;
+}
+
+.btn-primary {
+  background-color: #1976D2;
+  border-color: #1976D2;
+}
+
+.sidebar__link {
+  color: #333333;
+}
+
+.sidebar__link:hover {
+  background-color: #e3e7ed;
+}
+
+.footer {
+  background-color: #004098;
+  color: #ffffff;
+  line-height: 60px;
 }
 
