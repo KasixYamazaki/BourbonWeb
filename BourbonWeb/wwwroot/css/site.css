@@ -2,6 +2,13 @@ html {
   font-size: 14px;
 }
 
+:root {
+  --bs-primary: #004098;
+  --bs-primary-rgb: 0, 64, 152;
+  --bs-link-color: #004098;
+  --bs-link-hover-color: #002d6a;
+}
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;
