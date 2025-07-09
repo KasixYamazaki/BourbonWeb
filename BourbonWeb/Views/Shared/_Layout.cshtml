@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - BourbonWeb</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" integrity="sha384-KzZiE14YfkC77Uxv7bI2N+M5SSFe84bb+/a4TWJp55R6AL+Frmsjvd5oaWxvqL3i" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css" integrity="sha384-UoCUCQjra0mPyykSJEw8EaqW4QoxZRnO0GhVvtIp4enCZtL2lu1CoB+X8ATopO8J" crossorigin="anonymous" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/sidebar.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/BourbonWeb.styles.css" asp-append-version="true" />
 </head>
-<body class="d-flex flex-column min-vh-100">
+<body class="hold-transition sidebar-mini layout-fixed d-flex flex-column min-vh-100">
+    <div class="wrapper">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light border-bottom mb-3">
             <div class="container-fluid">
                 <button id="sidebarToggle" class="btn btn-outline-secondary me-2" type="button">
                     <span class="navbar-toggler-icon"></span>
@@ -35,7 +38,7 @@
         </nav>
     </header>
     <div id="page" class="d-flex flex-grow-1">
-        <nav id="sidebar" class="sidebar">
+        <nav id="sidebar" class="main-sidebar sidebar-dark-primary elevation-4">
             <ul class="nav flex-column">
                 <li class="nav-item">
                     <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
@@ -62,9 +65,11 @@
             &copy; 2025 - BourbonWeb - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+    </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js" integrity="sha384-NiQ+xqeqWbMrJyFWD9qhXnH4gUWLWyd4InENcy+XUG6uHgnIY7qDpiR5V0wSXwc8" crossorigin="anonymous"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
