@@ -75,6 +75,7 @@ namespace BourbonWeb.TagHelpers
             {
                 inputTag.Attributes["pattern"] = "[A-Za-z0-9]*";
                 inputTag.Attributes["inputmode"] = "latin";
+                inputTag.Attributes["oninput"] = "this.value=this.value.replace(/[^A-Za-z0-9]/g,'');";
 
                 if (!string.IsNullOrEmpty(Placeholder))
                     inputTag.Attributes["placeholder"] = Placeholder;
