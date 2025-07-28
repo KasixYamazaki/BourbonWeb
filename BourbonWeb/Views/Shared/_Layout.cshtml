@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@@4.0.0-rc4/dist/css/adminlte.min.css" crossorigin="anonymous" />
 </head>
 <body class="sidebar-expand-lg sidebar-open layout-fixed bg-body-tertiary">
+    <script>
+        (function () {
+            var state = localStorage.getItem('sidebar-state');
+            if (state === 'closed') {
+                document.body.classList.remove('sidebar-open');
+                document.body.classList.add('sidebar-collapse');
+            }
+        })();
+    </script>
     <div class="app-wrapper">
         <nav class="app-header navbar navbar-expand bg-body">
             <div class="container-fluid">
