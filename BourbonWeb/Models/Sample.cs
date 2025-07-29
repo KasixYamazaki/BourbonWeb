@@ -12,7 +12,6 @@ namespace BourbonWeb.Models
         [Range(0, 10000)]
         public decimal Price { get; set; }
 
-        [Required]
-        public required string Description { get; set; }
+        public string? Description { get; set; }
     }
 }
