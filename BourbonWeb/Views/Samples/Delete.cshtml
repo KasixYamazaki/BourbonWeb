@@ -18,7 +18,7 @@
                 @Html.DisplayNameFor(model => model.Price)
             </dt>
             <dd class="col-sm-11">
-                @Html.DisplayFor(model => model.Price)
+                @Model.Price.ToString("N0")
             </dd>
             <dt class="col-sm-1">
                 @Html.DisplayNameFor(model => model.Description)
