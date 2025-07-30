@@ -4,3 +4,8 @@ td.row-index {
     width: 5ch;
     padding-left: 0rem;
 }
+
+/* AdminLTE ‚Ìæ“ª—ñ—]”’‚ðã‘‚« */
+.table > :not(caption) > * > *:first-child {
+  padding-left: 0.5rem !important;
+}
