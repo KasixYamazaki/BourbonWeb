@@ -34,7 +34,7 @@ namespace BourbonWeb.Models
         public DateOnly? PaymentDate { get; set; }
 
         [DataType(DataType.DateTime)]
-        [Display(Name = "更新日")]
+        [Display(Name = "更新日時")]
         public DateTime? UpdatedAt { get; set; }
 
         [Display(Name = "有効")]
