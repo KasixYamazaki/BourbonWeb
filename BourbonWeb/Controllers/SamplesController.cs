@@ -54,7 +54,7 @@ namespace BourbonWeb.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Price,Description")] Sample sample)
+        public async Task<IActionResult> Create([Bind("Id,Name,Price,Description,Quantity,Weight,TargetYM,PaymentDate,UpdatedAt,IsActive,Text1,Text2,Text3,Text4,Text5")] Sample sample)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace BourbonWeb.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Price,Description")] Sample sample)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Price,Description,Quantity,Weight,TargetYM,PaymentDate,UpdatedAt,IsActive,Text1,Text2,Text3,Text4,Text5")] Sample sample)
         {
             if (id != sample.Id)
             {
