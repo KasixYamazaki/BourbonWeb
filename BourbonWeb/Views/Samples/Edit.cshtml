@@ -47,7 +47,7 @@
             <div class="row mb-3">
                 <label asp-for="TargetYM" class="col-sm-1 col-form-label"></label>
                 <div class="col-sm-11">
-                    <input asp-for="TargetYM" class="form-control" />
+                    <input asp-for="TargetYM" class="form-control" type="month" asp-format="{0:yyyy-MM}" />
                     <span asp-validation-for="TargetYM" class="text-danger"></span>
                 </div>
             </div>
@@ -68,7 +68,7 @@
             <div class="row mb-3">
                 <label asp-for="IsActive" class="col-sm-1 form-check-label"></label>
                 <div class="col-sm-11 form-check">
-                    <input asp-for="IsActive" class="form-check-input ms-1" />
+                    @Html.CheckBox("IsActive", Model?.IsActive ?? false, new { @class = "form-check-input ms-1" })
                     <span asp-validation-for="IsActive" class="text-danger"></span>
                 </div>
             </div>
