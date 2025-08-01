@@ -14,3 +14,8 @@ td.row-index {
 .table > :not(caption) > * > * {
     vertical-align: middle;
 }
+
+/* サイドバータイトル左揃え */
+.sidebar-brand {
+    justify-content: flex-start !important;
+}
