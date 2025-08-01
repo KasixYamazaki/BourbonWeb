@@ -20,10 +20,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        <a class="nav-link" asp-area="" asp-controller="Account" asp-action="Login">ログアウト</a>
                     </li>
                 </ul>
             </div>
@@ -31,10 +28,13 @@
     </nav>
 }
 @section Sidebar {
+    @* <aside class="app-sidebar bg-primary-subtle" data-bs-theme="dark"> *@
+    @* <aside class="app-sidebar bg-success-subtle" data-bs-theme="light"> *@
     <aside class="app-sidebar bg-primary-subtle" data-bs-theme="dark">
         <div class="sidebar-brand">
             <a asp-area="" asp-controller="Home" asp-action="Index" class="brand-link">
                 <img src="~/img/Logo_Lumonde.png" alt="Logo" class="brand-image" />
+                @* <img src="~/img/Logo_Alfort.png" alt="Logo" class="brand-image" /> *@
                 <span class="brand-text fw-light">@Configuration["SystemName"]</span>
             </a>
         </div>
@@ -45,12 +45,6 @@
                         <a asp-area="" asp-controller="Home" asp-action="Index" class="nav-link">
                             <i class="nav-icon bi bi-house"></i>
                             <p>Home</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a asp-area="" asp-controller="Home" asp-action="Privacy" class="nav-link">
-                            <i class="nav-icon bi bi-shield-lock"></i>
-                            <p>Privacy</p>
                         </a>
                     </li>
                     <li class="nav-item menu-open">
@@ -64,13 +58,13 @@
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
                                 <a asp-area="" asp-controller="Samples" asp-action="Index" class="nav-link">
-                                    <i class="nav-icon bi bi-shield-lock"></i>
+                                    <i class="nav-icon bi bi-circle"></i>
                                     <p>Sample1</p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a asp-area="" asp-controller="Samples" asp-action="Index2" class="nav-link">
-                                    <i class="nav-icon bi bi-shield-lock"></i>
+                                    <i class="nav-icon bi bi-circle"></i>
                                     <p>Sample2</p>
                                 </a>
                             </li>
