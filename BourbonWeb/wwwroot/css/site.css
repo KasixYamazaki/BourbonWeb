@@ -7,5 +7,10 @@ td.row-index {
 
 /* AdminLTE の先頭列余白を上書き */
 .table > :not(caption) > * > *:first-child {
-  padding-left: 0.5rem !important;
+    padding-left: 0.5rem !important;
+}
+
+/* テーブルの縦位置中央揃え */
+.table > :not(caption) > * > * {
+    vertical-align: middle;
 }
