@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BourbonWeb.Models
 {
@@ -37,8 +38,11 @@ namespace BourbonWeb.Models
         [Display(Name = "更新日時")]
         public DateTime? UpdatedAt { get; set; }
 
-        [Display(Name = "有効")]
+        [Display(Name = "状態")]
         public bool? IsActive { get; set; }
+
+        [NotMapped]
+        public string IsActiveDisplay => IsActive == true ? "有効" : "無効";
 
         [StringLength(100)]
         [Display(Name = "文字1")]
