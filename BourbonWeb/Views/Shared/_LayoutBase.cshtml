@@ -1,0 +1,46 @@
+﻿@inject Microsoft.Extensions.Configuration.IConfiguration Configuration
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - @Configuration["SystemName"]</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@@fontsource/source-sans-3@@5.2.8/index.min.css" crossorigin="anonymous" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/overlayscrollbars@@2.11.4/styles/overlayscrollbars.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@@1.13.1/font/bootstrap-icons.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@@4.0.0-rc4/dist/css/adminlte.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body class="sidebar-expand-lg sidebar-open layout-fixed bg-body-tertiary">
+    <script>
+        (function () {
+            var state = localStorage.getItem('sidebar-state');
+            if (state === 'closed') {
+                document.body.classList.remove('sidebar-open');
+                document.body.classList.add('sidebar-collapse');
+            }
+        })();
+    </script>
+    <div class="app-wrapper">
+        @RenderSection("Header", required: false)
+        @RenderSection("Sidebar", required: false)
+        <main class="app-main">
+            <div class="container-fluid pt-3">
+                @RenderBody()
+            </div>
+        </main>
+        <footer class="app-footer text-center">
+            <div class="container-fluid">
+                &copy; 2025 - @Configuration["SystemName"] - <a asp-area="" asp-controller="Home" asp-action="Privacy" class="text-decoration-none">Privacy</a>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/overlayscrollbars@@2.11.4/browser/overlayscrollbars.browser.es6.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@@popperjs/core@@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@@5.3.7/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/admin-lte@@4.0.0-rc4/dist/js/adminlte.min.js" crossorigin="anonymous"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
