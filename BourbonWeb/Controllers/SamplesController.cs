@@ -20,23 +20,33 @@ namespace BourbonWeb.Controllers
         }
 
         // GET: Samples
-        public async Task<IActionResult> Index(int? pageNumber)
+        public async Task<IActionResult> Index(string? searchString, int? pageNumber)
         {
             var query = _context.Sample
-                .AsNoTracking()
-                .OrderBy(s => s.Id);
+                .AsNoTracking();
 
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                query = query.Where(s => s.Name.Contains(searchString));
+            }
+
+            query = query.OrderBy(s => s.Id);
             int pageSize = 10;
             return View(await PaginatedList<Sample>.CreateAsync(query, pageNumber ?? 1, pageSize));
         }
 
         // GET: Samples
-        public async Task<IActionResult> Index2(int? pageNumber)
+        public async Task<IActionResult> Index2(string? searchString, int? pageNumber)
         {
             var query = _context.Sample
-                .AsNoTracking()
-                .OrderBy(s => s.Id);
+                .AsNoTracking();
 
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                query = query.Where(s => s.Name.Contains(searchString));
+            }
+
+            query = query.OrderBy(s => s.Id);
             int pageSize = 10;
             return View(await PaginatedList<Sample>.CreateAsync(query, pageNumber ?? 1, pageSize));
         }
