@@ -20,15 +20,25 @@ namespace BourbonWeb.Controllers
         }
 
         // GET: Samples
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? pageNumber)
         {
-            return View(await _context.Sample.ToListAsync());
+            var query = _context.Sample
+                .AsNoTracking()
+                .OrderBy(s => s.Id);
+
+            int pageSize = 10;
+            return View(await PaginatedList<Sample>.CreateAsync(query, pageNumber ?? 1, pageSize));
         }
 
         // GET: Samples
-        public async Task<IActionResult> Index2()
+        public async Task<IActionResult> Index2(int? pageNumber)
         {
-            return View(await _context.Sample.ToListAsync());
+            var query = _context.Sample
+                .AsNoTracking()
+                .OrderBy(s => s.Id);
+
+            int pageSize = 10;
+            return View(await PaginatedList<Sample>.CreateAsync(query, pageNumber ?? 1, pageSize));
         }
 
         // GET: Samples/Details/5
