@@ -1,0 +1,101 @@
+﻿@model BourbonWeb.Models.Sample
+
+@{
+    ViewData["Title"] = "サンプルデータ詳細";
+}
+
+<div class="card">
+    <div class="card-body">
+        <dl class="row mb-0">
+            <dt class="col-sm-1">
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd class="col-sm-11">
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt class="col-sm-1">
+                @Html.DisplayNameFor(model => model.Price)
+            </dt>
+            <dd class="col-sm-11">
+                @Model.Price.ToString("N0")
+            </dd>
+            <dt class="col-sm-1">
+                @Html.DisplayNameFor(model => model.Description)
+            </dt>
+            <dd class="col-sm-11">
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+            <dt class="col-sm-1">
+                @Html.DisplayNameFor(model => model.Quantity)
+            </dt>
+            <dd class="col-sm-11">
+                @Html.DisplayFor(model => model.Quantity)
+            </dd>
+            <dt class="col-sm-1">
+                @Html.DisplayNameFor(model => model.Weight)
+            </dt>
+            <dd class="col-sm-11">
+                @Html.DisplayFor(model => model.Weight)
+            </dd>
+            <dt class="col-sm-1">
+                @Html.DisplayNameFor(model => model.TargetYM)
+            </dt>
+            <dd class="col-sm-11">
+                @Html.DisplayFor(model => model.TargetYM)
+            </dd>
+            <dt class="col-sm-1">
+                @Html.DisplayNameFor(model => model.PaymentDate)
+            </dt>
+            <dd class="col-sm-11">
+                @Html.DisplayFor(model => model.PaymentDate)
+            </dd>
+            <dt class="col-sm-1">
+                @Html.DisplayNameFor(model => model.UpdatedAt)
+            </dt>
+            <dd class="col-sm-11">
+                @Html.DisplayFor(model => model.UpdatedAt)
+            </dd>
+            <dt class="col-sm-1">
+                @Html.DisplayNameFor(model => model.IsActive)
+            </dt>
+            <dd class="col-sm-11">
+                @Model.IsActiveDisplay
+            </dd>
+            <dt class="col-sm-1">
+                @Html.DisplayNameFor(model => model.Text1)
+            </dt>
+            <dd class="col-sm-11">
+                @Html.DisplayFor(model => model.Text1)
+            </dd>
+            <dt class="col-sm-1">
+                @Html.DisplayNameFor(model => model.Text2)
+            </dt>
+            <dd class="col-sm-11">
+                @Html.DisplayFor(model => model.Text2)
+            </dd>
+            <dt class="col-sm-1">
+                @Html.DisplayNameFor(model => model.Text3)
+            </dt>
+            <dd class="col-sm-11">
+                @Html.DisplayFor(model => model.Text3)
+            </dd>
+            <dt class="col-sm-1">
+                @Html.DisplayNameFor(model => model.Text4)
+            </dt>
+            <dd class="col-sm-11">
+                @Html.DisplayFor(model => model.Text4)
+            </dd>
+            <dt class="col-sm-1">
+                @Html.DisplayNameFor(model => model.Text5)
+            </dt>
+            <dd class="col-sm-11">
+                @Html.DisplayFor(model => model.Text5)
+            </dd>
+
+        </dl>
+    </div>
+    <div class="card-footer">
+        <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-primary">編集</a>
+        <a asp-action="Index" class="btn btn-secondary float-end">戻る</a>
+    </div>
+</div>
