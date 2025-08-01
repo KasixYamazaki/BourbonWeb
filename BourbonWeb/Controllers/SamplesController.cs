@@ -25,6 +25,12 @@ namespace BourbonWeb.Controllers
             return View(await _context.Sample.ToListAsync());
         }
 
+        // GET: Samples
+        public async Task<IActionResult> Index2()
+        {
+            return View(await _context.Sample.ToListAsync());
+        }
+
         // GET: Samples/Details/5
         public async Task<IActionResult> Details(int? id)
         {
