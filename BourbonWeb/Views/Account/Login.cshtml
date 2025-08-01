@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "ログイン";
+}
+
+<div class="card mx-auto" style="max-width: 360px;">
+    <div class="card-header text-center">
+        <h5 class="mb-0">ログイン</h5>
+    </div>
+    <form>
+        <div class="card-body">
+            <div class="row mb-3">
+                <label for="LoginId" class="col-4 col-form-label">ID</label>
+                <div class="col-8">
+                    <input type="text" class="form-control" id="LoginId" name="LoginId" />
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="Password" class="col-4 col-form-label">パスワード</label>
+                <div class="col-8">
+                    <input type="password" class="form-control" id="Password" name="Password" />
+                </div>
+            </div>
+        </div>
+        <div class="card-footer text-end">
+            <button type="submit" class="btn btn-primary me-2">ログイン</button>
+            <a class="btn btn-secondary" href="javascript:window.close();">閉じる</a>
+        </div>
+    </form>
+</div>
